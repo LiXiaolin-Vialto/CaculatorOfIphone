@@ -1,0 +1,70 @@
+
+*{
+  padding:0;
+  margin:0;
+  font-family:"Microsoft YaHei";
+
+}
+.main{
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+  align-content:flex-start;
+  -webkit-align-content: flex-start;
+
+  background: #000;
+  border:1px solid #c0c0c0;
+  width:750px;
+  height:1295px;
+
+  margin: 0 auto;
+
+  .keyboard{
+    display: inherit;
+    -webkit-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    align-content:flex-start;
+    -webkit-align-content: flex-start;
+
+    width:750px;
+    height:935px;
+    margin-left:1px;
+
+    .btn{
+      width:187px;
+      height:187px;
+      background:#d5d5d5;
+
+      font-size:3rem;
+      outline:1px solid #000;
+
+      line-height:187px;
+      text-align: center;
+      &:active{
+        background:#bebebe;
+      }
+    }
+    .number-col-2{
+      width:374px;
+    }
+    .operate{
+      background:#f98710;
+
+      &:active{
+        background:#e07f1f;
+      }
+    }
+  }
+
+
+  input[type="text"] {
+    color:#fff;
+    background:#202020;
+    height:360px;
+    width:750px;
+    border:none;
+    font-size:13rem;
+    text-align: right;
+  }
+}
